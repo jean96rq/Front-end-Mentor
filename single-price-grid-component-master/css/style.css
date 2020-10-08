@@ -1,0 +1,127 @@
+:root{
+    --cyan:hsl(179, 62%, 43%);
+    --bright-yellow:hsl(71, 73%, 54%);
+    --light-gray:hsl(204, 43%, 93%);
+    --grayish-blue:hsl(218, 22%, 67%);
+    --blue:rgba(74,190,189,1);
+}
+body{
+    font-size: 16px;
+    margin:0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    
+}
+p{
+    color: var(--grayish-blue);
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 30px;
+}
+.info{
+    width: 100%;
+    max-width: 1440px;
+    padding: 40px;
+    box-sizing: border-box;
+    height: 45vh;
+}
+.info h3{
+    color: var(--cyan);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.info h4{
+    color: var(--bright-yellow);
+    font-size: 1.2rem;
+    margin-bottom: -10px;
+}
+.subscription{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    height: 55vh;
+    align-items: center;
+    box-sizing: border-box;
+}
+.subscription h3{
+    color: var(--light-gray);
+    font-size: 1.2rem;
+}
+.subscription .price-sub{
+    width: 50%;
+    background-color: var(--cyan);
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.subscription .info-sub{
+    width: 50%;
+    background-color: var(--blue);
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.subscription .price-sub h1{
+    font-size: 2.5rem;
+    color: var(--light-gray);
+}
+.subscription .price-sub span{
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin: 20px;
+    font-weight: 300;
+    vertical-align: middle;
+}
+.subscription .price-sub h4{
+    font-size: 1.3rem;
+    color: var(--light-gray);
+    font-weight: 300;
+}
+.subscription .price-sub button{
+    background-color: var(--bright-yellow);
+    width: 300px;
+    border: none;
+    padding: 20px 10px;
+    border-radius: 5px;
+    color: var(--light-gray);
+    font-weight: 300;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+}
+.subscription .info-sub p{
+    font-size: 1.1rem;
+    color: var(--light-gray);
+    font-weight: 300;
+    width: 80%;
+}
+
+@media only screen and (max-width:500px){
+    .info{
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+    .subscription{
+        width: 100%;
+        display: block;
+        height:auto;
+    }
+    .subscription .price-sub{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .subscription .info-sub{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+}
+
+/* 
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
